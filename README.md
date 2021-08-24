@@ -1,10 +1,3 @@
-# Projetos
-:mortar_board: Esses projetos são feito através de curso.
+# meusProjetos
+:mortar_board: Meus Projetos.
 
-<details>
-  <summary>Meu Projeto / </sumamary>
-</details>
-
-<details>
-  <summary>Curso / Projeto Guia de Perguntas</sumamary>
-</details>
