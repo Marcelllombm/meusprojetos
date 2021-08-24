@@ -1,5 +1,5 @@
-# meusprojetos
-:mortar_board: Projetos.
+# Projetos
+:mortar_board: Esses projetos são feito através de curso.
 
 <details>
   <summary>Meu Projeto / </sumamary>
