@@ -63,7 +63,6 @@ app.get('/pergunta/:id', async (req, res)=>{
            pergunta: pergunta,
            respostas: respostas
          });
-         console.log(respostas, 'no terminal llllllll');
      });
     }else{
       res.redirect("/");
