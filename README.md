@@ -1,2 +1,2 @@
-# meusprojetos
-:mortar_board: Meus projetos.
+# Projetos
+:mortar_board: Projetos.
