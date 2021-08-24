@@ -1,5 +1,5 @@
 # meusprojetos
-:mortar_board: projetos.
+:mortar_board: Projetos.
 
 <details>
   <summary>Meu Projeto / </sumamary>
