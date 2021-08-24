@@ -6,13 +6,13 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey:true,
       type: DataTypes.INTEGER,
     },
-    cargo: DataTypes.TEXT,
+    corpo: DataTypes.TEXT,
     perguntaId: DataTypes.INTEGER,
     created_at: { type: DataTypes.DATE, defaultValue: Date.now() },
     updated_at: { type: DataTypes.DATE, defaultValue: Date.now() },
   }, {
     timestamps: false,
-    tableName: 'guia_pesquisa',
+    tableName: 'guia_resposta',
   });
 
 return guiaResposta;

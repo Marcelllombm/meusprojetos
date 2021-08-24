@@ -10,11 +10,11 @@ module.exports = {
         primaryKey:true,
         type: Sequelize.INTEGER
        },
-      Cargo:{
+      corpo:{
         allowNull:false,
         type: Sequelize.TEXT
       },
-      perguntaId: {
+      pergunta_id: {
         allonwNull:false,
         type:Sequelize.INTEGER
       },

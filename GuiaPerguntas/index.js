@@ -52,9 +52,19 @@ app.get('/pergunta/:id', async (req, res)=>{
     where:{id: askId}
   }).then(pergunta => {
     if(pergunta != undefined){
-      res.render("seeQuestion",{
-        pergunta: pergunta
-      });
+      
+    guia_resposta.findAll({
+      where:{pergunta_id: askId},
+      order:[
+        ['id','DESC']
+      ]
+     }).then(respostas =>{
+       res.render("seeQuestion",{
+           pergunta: pergunta,
+           respostas: respostas
+         });
+         console.log(respostas, 'no terminal llllllll');
+     });
     }else{
       res.redirect("/");
     }
@@ -64,12 +74,10 @@ app.get('/pergunta/:id', async (req, res)=>{
 
 app.post('/responder', (req, res)=>{
   const {corpo , perguntaId} = req.body;
-  console.log(perguntaId);
-  guia_resposta.create({
+    guia_resposta.create({
       corpo,
       perguntaId,
     }).then(()=>{
-
       res.redirect('/pergunta/'+ perguntaId);
     });
  
