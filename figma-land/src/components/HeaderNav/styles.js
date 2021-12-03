@@ -19,7 +19,8 @@ export const Container = styled.nav`
         font-size: 0.9375rem;
         padding: 0.2rem;
         text-decoration: none;
-        transition: 0.3s ease-in-out;
+        transition: 0.09s ease-in-out;
+        border:0;
         &:hover {
           border-bottom: 0.25rem solid #023e8a;
           color: #023e8a;
