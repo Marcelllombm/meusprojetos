@@ -17,7 +17,9 @@ export function Features() {
 				</div>
 				<div className="itens">
 					<span>
-						<img src={require("../../assets/ic_restaurant.svg").default} alt="restaurante"
+						<img
+							src={require("../../assets/ic_restaurant.svg").default}
+							alt="restaurante"
 						/>
 						<h3>At your fingertips</h3>
 						<p>
