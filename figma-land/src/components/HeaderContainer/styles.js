@@ -43,7 +43,7 @@ export const Container = styled.section`
     width: 256px;
     height: 65ṕx;
     padding: 15px;
-    
+    transition: 0.3s ease-in-out;
     &:hover{
       filter: opacity(70%);
       transform: translateX(0.2rem) translateY(-0.7rem);
