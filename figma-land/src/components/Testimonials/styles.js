@@ -62,6 +62,10 @@ h1{
       font-weight: 700;
     }
 
+    &:hover{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      transform: translateX(0.2rem) translateY(-0.7rem);
+    }
   }
 }
 `;
