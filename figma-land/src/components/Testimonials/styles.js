@@ -27,7 +27,6 @@ h1{
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 
- 
   .testimonial{
     border: 1px solid #DEDEDE;
     border-radius: 6px;
@@ -67,7 +66,24 @@ h1{
       transform: translateX(0.2rem) translateY(-0.7rem);
     }
   }
-}
+ }
+ button{
+      background-color: var(--blue);
+      border:0;
+      border-radius:25px;
+      color:white;
+      font-size: 1.35rem;
+      font-weight: 700;
+      padding: 1rem 2.5rem;
+      margin-top: 4rem;
+    &:hover{
+      border: 0;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      color:white;
+      transform: translateX(0.2rem) translateY(-0.7rem);
+      filter: brightness(0.9)
+    }
+  }
 `;
 
 export const StarContainer = styled.section`

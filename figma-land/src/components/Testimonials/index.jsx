@@ -23,6 +23,7 @@ export function Testimonials() {
 			<Content>
 				<h1>Testimonials</h1>
 				<div className="testimonials">{testimonials}</div>
+				<button>More Testimonials</button>
 			</Content>
 		</Container>
 	);
