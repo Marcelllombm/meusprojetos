@@ -5,6 +5,7 @@ import {Prototyping} from './components/Prototyping ';
 import { Newsletter } from './components/Newsletter';
 import { Partners } from './components/Partners';
 import { Testimonials } from './components/Testimonials';
+import { Pricing } from './components/Pricing';
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
       <Newsletter/>
       <Partners/>
       <Testimonials/>
+      <Pricing/>
       <GlobalStyle/>
     </>
   )
