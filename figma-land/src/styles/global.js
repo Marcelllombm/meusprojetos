@@ -22,6 +22,8 @@ export const GlobalStyle = createGlobalStyle`
     @media(max-width: 720px){
       font-size: 87.5%; // 14px
     }
+
+    scroll-behavior: smooth;
   }
   body{
     -webkit-font-smoothing: antialiased;
@@ -46,5 +48,11 @@ export const GlobalStyle = createGlobalStyle`
     opacity: 0.6;
     cursor:not-allowed;
   }
-
+  ::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: #14213d;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4539e6;
+}
 `;
