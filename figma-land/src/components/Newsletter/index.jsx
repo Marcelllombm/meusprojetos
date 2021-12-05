@@ -3,7 +3,7 @@ import { Container, Content } from "./styles";
 
 export function Newsletter() {
 	const [value, setValue] = useState("");
-	console.log(value);
+	
 
 	function handleOnchange(ev) {
 		const { value } = ev.target;

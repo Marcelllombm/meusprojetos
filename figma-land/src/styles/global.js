@@ -5,8 +5,8 @@ export const GlobalStyle = createGlobalStyle`
     --blue:#2091f9;
     --darkBackground: #252B42;
     --text:#252B42;
-    -inputBackground: #e8e8e8;
-    -inputText:#18171D;
+    --inputBackground: #F5F5F5;
+    --inputText:#18171D;
   }
   * {
     margin:0;

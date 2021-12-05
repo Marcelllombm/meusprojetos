@@ -28,7 +28,7 @@ export function HeaderNav() {
 					<a href="#contact">Contact</a>
 				</li>
 			</ul>
-			<div className="phone">000 99999-9999</div>
+			<div className="phone">(843) 555-0130</div>
 		</Container>
 	);
 }

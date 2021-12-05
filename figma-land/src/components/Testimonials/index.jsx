@@ -5,7 +5,7 @@ export function Testimonials() {
 
 	for (let i = 0; i <= 5; i++) {
 		testimonials.push(
-			<div className="testimonial">
+			<div className="testimonial" key={i}>
 				<img src={require("../../assets/people-ellipse.png").default} alt="" />
 				<p>
 					Slate helps you see how many more days you need to work to reach your
