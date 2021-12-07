@@ -14,13 +14,13 @@ export const ToTop = styled.div`
     position: fixed;
     color:white;
     z-index:12;
-    bottom: 2rem;
-    right: 3rem;
+    bottom: 7rem;
+    right: 2rem;
   }
  .bg-scroll{
   position: fixed;
-  bottom: 1rem;
-  right: 2rem;
+  bottom: 6rem;
+  right: 1rem;
   z-index: 8;
   width:50px;
   height: 50px;

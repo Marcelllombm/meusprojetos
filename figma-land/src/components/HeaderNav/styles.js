@@ -51,15 +51,48 @@ export const Container = styled.nav`
   @media screen and (min-width:320px) and (max-width:990px){
     .toogle{
       display: block;
-      position: fixed;
+      position: absolute;
       top: 1rem;
       right: 2rem;
+      cursor: pointer;
+      z-index: 16;
+      color:white;
     }
-    ul{
+    .menu-nav{
       display:none;
     }
+    
+    
   }
+`;
 
+export const ResponsiveNav = styled.div`
+ul{
+  right: 0;
+  top:${({state})=>(state ? '0px' : '-100%')};
 
-  
+  width: 100%;
+  padding:4rem 0;
+  display: flex;
+  flex-direction:column;
+  background: black;
+  position: absolute;
+  z-index:14;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s ease-in-out;
+  li{
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    a{
+      &:hover {
+          border-bottom: 0.25rem solid var(--blue);
+          color: var(--blue);
+          font-weight: 400;
+        }
+    }
+   }
+}
 `;
