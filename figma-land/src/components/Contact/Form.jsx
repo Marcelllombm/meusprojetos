@@ -8,7 +8,7 @@ export function Form() {
 	};
 	const [formValues, setFormValues] = useState(initialValues);
 	const [formErrors, setFormErrors] = useState({});
-	const [isSubmit, setIsSbmit] = useState(false);
+	const [isSubmit, setIsSubmit] = useState(false);
 
 	function handleOnchange(ev) {
 		const { name, value } = ev.target;
@@ -18,9 +18,7 @@ export function Form() {
 	function handleSubmit(ev) {
 		ev.preventDefault();
 		setFormErrors(validate(formValues));
-		setIsSbmit(true);
-		const { username, email, message } = formValues;
-		localStorage.setItem("cadastro", [username, email, message]);
+		setIsSubmit(true);
 	}
   
 	useEffect(() => {
@@ -31,6 +29,8 @@ export function Form() {
         email: "",
         message: "",
       };
+			const { username, email, message } = formValues;
+			localStorage.setItem("cadastro", [username, email, message]);
 			setFormValues(initialValues);
 		}
 

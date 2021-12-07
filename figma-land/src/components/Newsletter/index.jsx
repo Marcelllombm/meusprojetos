@@ -1,24 +1,52 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Content } from "./styles";
 
 export function Newsletter() {
-	const [value, setValue] = useState("");
+	const initialValues = {
+		email:''
+	}
+	const [valueForm, setValueForm] = useState(initialValues);
+	const [formError,setFormError] = useState({});
+	const [isSubmit, setIsSubmit] = useState(false);
 	
 
 	function handleOnchange(ev) {
-		const { value } = ev.target;
-		setValue(value);
+		const { name, value } = ev.target;
+		setValueForm({...valueForm, [name]: value});
 	}
 
-	function onSubmit(ev) {
+	function handleSubmit(ev) {
 		ev.preventDefault();
-		if (value === "") {
-			alert("your email");
-		} else {
-			localStorage.setItem("email", value);
-			setValue("");
-			alert("Thanks for Sign up for our newsletter");
+		setFormError(validate(valueForm));
+		setIsSubmit(true);
+		
+	}
+
+	useEffect(() => {
+        
+    if (Object.keys(formError).length === 0 && isSubmit) {
+      const initialValues = {
+        email: ""
+      };
+			const {email} = valueForm;
+			localStorage.setItem("E-mail:",  email);
+			setValueForm(initialValues);
 		}
+
+	}, [formError]);
+
+	const validate = (value)=>{
+		const error = {};
+		const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+		
+		if (!value.email) {
+			error.email = "Email is required!";
+		} else if (!regex.test(value.email)) {
+			error.email = "This is not a valid email format ";
+		}
+
+		return error;
+		
 	}
 
 	return (
@@ -35,12 +63,18 @@ export function Newsletter() {
 						<br />
 						Available exclusivery on Figmaland
 					</p>
-					<form onSubmit={onSubmit}>
+					<form onSubmit={handleSubmit}>
+					{Object.keys(formError).length === 0 && isSubmit ? (
+				<div className="validate-sucess">Successful registration</div>
+			) : (
+				""
+			)}
+			<p  className="validateErrors">{formError.email}</p>
 						<input
-							type="email"
+							type="text"
 							name="email"
 							placeholder="Your Email"
-							value={value}
+							value={valueForm.email}
 							onChange={handleOnchange}
 						/>
 						<button type="submit"> Subscribe</button>
