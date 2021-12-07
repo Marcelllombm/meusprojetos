@@ -3,7 +3,7 @@ import { Container } from "./styles";
 export function HeaderContainer() {
 	return (
 		<Container>
-			<div className="content">
+			<div className="content" id="home">
 				<h3>At your fingertips</h3>
 				<h1>Lightning fast prototyping</h1>
 				<p>

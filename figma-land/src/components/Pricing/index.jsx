@@ -3,7 +3,7 @@ import { Container, Content } from "./styles";
 export function Pricing() {
 	return (
 		<Container>
-			<Content>
+			<Content id="pricing">
 				<div className="left-content">
 					<h1>Pricing</h1>
 					<p>

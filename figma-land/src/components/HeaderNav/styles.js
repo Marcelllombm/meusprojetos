@@ -8,6 +8,12 @@ export const Container = styled.nav`
   margin: 0 auto;
   width:80%;
   z-index: 4;
+
+  
+  .toogle{
+    display: none;
+  }
+  
     
   ul{
     display: flex;
@@ -38,4 +44,22 @@ export const Container = styled.nav`
     padding: 15px;
   }
 
+  @media (max-width:1221px){
+    width:95%;
+
+    }
+  @media screen and (min-width:320px) and (max-width:990px){
+    .toogle{
+      display: block;
+      position: fixed;
+      top: 1rem;
+      right: 2rem;
+    }
+    ul{
+      display:none;
+    }
+  }
+
+
+  
 `;

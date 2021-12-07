@@ -20,7 +20,7 @@ export function Testimonials() {
 
 	return (
 		<Container>
-			<Content>
+			<Content id='testimonials'>
 				<h1>Testimonials</h1>
 				<div className="testimonials">{testimonials}</div>
 				<button>More Testimonials</button>

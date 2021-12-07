@@ -12,22 +12,24 @@ export const Content = styled.article`
   margin: 0 auto;
   width:80%;
   .imgNewsletter{
-    width: 60%;
+    width: 50%;
     img{
       width: 100%;
     }
   }
   .newsletter{
     text-align: center;
-    margin-left: 10%;
-    width: 30%;
+    margin-left: 5%;
+    width: 40%;
 
     h1{
   color: var(--text);
     font-size: 2.78rem;
     font-weight:400;
     line-height: 57px;
-    margin-top: 1.5rem;
+    margin: 1.5rem auto;
+    text-align: center;
+    max-width:300px ;
 
   }
   h3{
@@ -76,4 +78,28 @@ export const Content = styled.article`
     }
   }
   
+  @media screen and (min-width: 320px) and (max-width:1070px ){
+      .newsletter{
+        text-align: center;
+      form{
+        input, button{
+          width: 100%;
+          margin: 0.5rem 0;
+          max-width:300px;
+
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width:960px ){
+    flex-direction: column;
+    .imgNewsletter{
+      width: 80%;
+    }
+    .newsletter{
+      width: 80%;
+      margin: 0;
+    }
+  }
 `;

@@ -84,6 +84,31 @@ h1{
       filter: brightness(0.9)
     }
   }
+  @media screen and (min-width: 320px) and (max-width:1050px){
+  .testimonials{
+    grid-template-columns: repeat(2, 1fr);
+    .testimonial{
+      width: 100%;
+      &:nth-last-child(-n + 2){
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width:750px){
+  .testimonials{
+    grid-template-columns: repeat(1, 1fr);
+    .testimonial{
+      margin: 0 auto;
+      width: 70%;
+      &:nth-last-child(-n + 3){
+        display: none;
+      }
+      
+    }
+  }
+}
 `;
 
 export const StarContainer = styled.section`
@@ -94,4 +119,5 @@ export const StarContainer = styled.section`
     cursor: pointer;
     transition: color 200ms;
   }
+
 `;

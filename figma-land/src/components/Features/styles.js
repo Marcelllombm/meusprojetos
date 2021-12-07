@@ -4,6 +4,10 @@ export const Container = styled.section`
   margin: 0 auto;
   padding: 5rem 0;
   width: 80%;
+
+  @media screen and (min-width: 320px) and (max-width:1200px){
+  width: 95%;
+}
   `;
 
 export const Header = styled.header`
@@ -72,5 +76,40 @@ export const Content = styled.article`
     width: 100%;
   }
   }
+  @media screen and (min-width: 320px) and (max-width:1000px){
+    flex-direction: column;
+    
+    .itens{
 
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left:0;
+  margin-top: 2rem;
+  width: auto;
+  gap:0;
+      span{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:auto;
+        margin: 0 10%;
+        text-align: center;
+        img{
+         max-width: 40px;
+        }
+      }
+    }
+}
+@media screen and (min-width: 320px) and (max-width:650px){
+  .itens{
+    flex-direction:column;
+  span{
+  margin-top:2rem;
+  
+  }
+  }
+}
 `;

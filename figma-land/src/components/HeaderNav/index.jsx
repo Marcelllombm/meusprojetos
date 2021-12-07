@@ -1,12 +1,32 @@
+import {useState} from 'react';
 import { Container } from "./styles";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { VscChromeClose } from "react-icons/vsc";
+
 export function HeaderNav() {
+	const [navbarState, setNavbarState] = useState(false);
 	return (
 		<Container>
 			<div className="content">
 				<div className="logo">
 					<img src={require(`../../assets/logo.png`).default} alt="" />
 				</div>
-				<div className="toggle"></div>
+
+				<div className="toogle">{navbarState ? (
+							<VscChromeClose size={25}
+								onClick={() => {
+									setNavbarState(false);
+								}}
+							/>
+						) : (
+							<GiHamburgerMenu size={25}
+								onClick={() => {
+									setNavbarState(true);
+								}}
+							/>
+						)}
+				</div>
+			
 			</div>
 			<ul>
 				<li>
@@ -29,6 +49,8 @@ export function HeaderNav() {
 				</li>
 			</ul>
 			<div className="phone">(843) 555-0130</div>
+		
+
 		</Container>
 	);
 }

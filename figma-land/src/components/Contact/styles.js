@@ -47,6 +47,10 @@ main{
     margin: 4rem 0;
     max-width: 870px;
     max-height: 370px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .info{
@@ -78,7 +82,8 @@ main{
   text-align: center;
   margin: 4rem 0;
   padding: 4rem ;
-  width: 848px;
+  width: 100%;
+  max-width: 848px;
   h1{
   color:var(--text);
   font-size: 1.35rem;
@@ -132,7 +137,7 @@ main{
     color: #b40000;
     padding-left: 20px;
     max-width: max-content;
-    margin-top: -30px;
+    margin-top: -20px;
     width: 100%;
     
   }
@@ -143,6 +148,15 @@ main{
     padding: 1rem;
     
   }
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:560px){
+  main{
+    .info{
+      flex-direction: column;
+    align-items:center;
+    }
   }
 }
 `;

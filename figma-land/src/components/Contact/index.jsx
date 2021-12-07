@@ -8,8 +8,8 @@ import {
 
 export function Contact() {
 	return (
-		<Container id="contact">
-			<Content>
+		<Container >
+			<Content id="contact">
 				<header>
 					<h1>Contact Us</h1>
 					<p>

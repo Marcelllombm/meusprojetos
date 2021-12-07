@@ -29,7 +29,9 @@ export const Content = styled.article`
     width:298px;
   }
   .partners{
+    text-align: center;
     margin:4rem 0;
+
     img{
       padding: 2rem;
       border:0;

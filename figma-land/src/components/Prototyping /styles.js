@@ -16,10 +16,12 @@ justify-content: center;
 align-items:center;
 h1{
   color: white;
-     font-size: 2.78rem;
-     font-weight:400;
-     line-height: 57px;
-     margin-top: 1.5rem;
+  font-size: 2.78rem;
+  font-weight:400;
+  line-height: 57px;
+  text-align: center;
+  margin-top: 1.5rem;
+
 
   }
   h3{
@@ -73,11 +75,12 @@ h1{
         }
         &:hover{
           background: white;
-          border: 0;
+          border: 1px solid white;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           color: var(--blue);
           transform: translateX(0.2rem) translateY(-0.7rem);
           }
        }
-      }   
+      }  
+
 `;

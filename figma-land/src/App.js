@@ -1,4 +1,5 @@
 import {GlobalStyle} from './styles/global';
+import {ScrollToTop} from './components/ScrollToTop';
 import {Header} from './components/Header';
 import {Features} from './components/Features';
 import {Prototyping} from './components/Prototyping ';
@@ -12,6 +13,7 @@ import { Footer } from './components/Footer';
 export function App() {
   return (
     <>
+      <ScrollToTop/>
       <Header/>
       <Features/>
       <Prototyping />

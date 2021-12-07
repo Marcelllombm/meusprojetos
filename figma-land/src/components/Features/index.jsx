@@ -3,7 +3,7 @@ import { Container, Header, Content } from "./styles";
 export function Features() {
 	return (
 		<Container>
-			<Header>
+			<Header id="features">
 				<h3>At your fingertips</h3>
 				<h1>Features</h1>
 				<p>

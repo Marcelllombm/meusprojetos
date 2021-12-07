@@ -3,7 +3,7 @@ import { Container, Content } from "./styles";
 export function Partners() {
 	return (
 		<Container>
-			<Content>
+			<Content id='partners'>
 				<h1>Partners</h1>
 				<p>
 					Most calendars are designed for teams. Slate is designed for

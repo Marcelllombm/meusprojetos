@@ -32,6 +32,7 @@ export const Content = styled.article`
 
   ul{
     display: flex;
+    flex-direction: row;
     list-style-type: none;
     margin-top:2rem;
     li{
@@ -52,4 +53,12 @@ export const Content = styled.article`
     }
   }
 
+  @media screen and (min-width: 320px) and (max-width:550px){
+  ul{
+    flex-direction: column;
+    li{
+      padding-top: 1rem;
+    }
+  }
+}
 `;

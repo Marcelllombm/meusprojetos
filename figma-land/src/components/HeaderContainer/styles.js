@@ -53,7 +53,11 @@ export const Container = styled.section`
   .imgNotebook{
     width: 100%;
     text-align: center;
-    position: relative;
     z-index:5;
+    img{
+      height: auto;
+      width: 100%;
+    }
   }
+
 `;
