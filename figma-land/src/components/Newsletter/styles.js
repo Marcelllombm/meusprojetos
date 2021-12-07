@@ -76,6 +76,24 @@ export const Content = styled.article`
         filter: brightness(0.9);
       }
     }
+    .validateErrors{
+    align-items: left;
+    color: #b40000;
+    border-radius: 25px;
+    padding: 0.5rem; 
+    margin-top: 10px;
+    font-size:1rem;
+    
+  }
+  .validate-sucess{
+    background: #7ede7e;
+    border-radius: 25px;
+    color: #093a19;
+    padding: 0.5rem;
+    width:60%;
+    margin: 0 auto;
+    
+  }
   }
   
   @media screen and (min-width: 320px) and (max-width:1070px ){
