@@ -2,6 +2,7 @@
 :mortar_board: Meus Projetos..
 
 # Figma-land
+## [See result - LINK](https://marcelllombm.github.io/figma-land/)
 [Technologies](#Technologies-figma-land)  |  [How To Use](#how-to-use-figma-land)  |  [My Purpose](#my-purpose-figma-land) | [Challenge I Faced ](#challenge-i-faced-figma-land)
 </br></br>
 <img src='img/figma-land.gif' alt='figma-land'>
