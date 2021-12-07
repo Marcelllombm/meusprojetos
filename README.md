@@ -28,10 +28,13 @@
 # Clone this repository
 $ git clone git@github.com:Marcelllombm/meusprojetos.git
 
+# Go into the repository
+$ cd meusprojetos
+
 # Enter the branch app-produtos
 $ git checkout figma-land
 
-# Go into the repository
+# enter the folder
 $ cd figma-land
 
 # Install dependencies
