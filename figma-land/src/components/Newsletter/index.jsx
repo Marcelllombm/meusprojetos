@@ -23,7 +23,7 @@ export function Newsletter() {
 
 	return (
 		<Container>
-			<Content>
+			<Content id='newsletter'>
 				<div className="imgNewsletter">
 					<img src={require("../../assets/newsletter.svg").default} alt="" />
 				</div>

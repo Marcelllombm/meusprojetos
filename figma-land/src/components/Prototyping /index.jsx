@@ -3,7 +3,7 @@ import { Container, Content } from "./styles";
 export function Prototyping() {
 	return (
 		<Container>
-			<Content>
+			<Content id='prototyping'>
 				<h3>At your fingertips</h3>
 				<h1>Lightning fast prototyping </h1>
 				<p>

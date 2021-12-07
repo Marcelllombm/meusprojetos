@@ -8,7 +8,7 @@ import {
 export function Footer() {
 	return (
 		<Container>
-			<Content>
+			<Content id="footer">
 				<div className="midia-sociais">
 					<Twitter size={40} className="inc" />
 					<Facebook size={40} className="inc" />

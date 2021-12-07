@@ -11,9 +11,9 @@ export function HeaderContainer() {
 					freelancers
 				</p>
 			</div>
-			<button>Try For Free</button>
-			<div className="imgNotebook">
-				<img src={require("../../assets/imgSistem-1.png").default} alt="" />
+				<button className='btImgNotebook'>Try For Free</button>
+				<div className="imgNotebook">
+					<img src={require("../../assets/imgSistem-1.png").default} alt="" />
 			</div>
 		</Container>
 	);

@@ -101,7 +101,7 @@ h1{
     grid-template-columns: repeat(1, 1fr);
     .testimonial{
       margin: 0 auto;
-      width: 70%;
+      width: 85%;
       &:nth-last-child(-n + 3){
         display: none;
       }
@@ -109,6 +109,7 @@ h1{
     }
   }
 }
+
 `;
 
 export const StarContainer = styled.section`
