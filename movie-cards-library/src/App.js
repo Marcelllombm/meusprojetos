@@ -6,7 +6,7 @@ import MovieList from './components/MovieList';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header title="Movie Cards Library" />
       <MovieList />
     </div>
   );
