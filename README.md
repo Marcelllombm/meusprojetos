@@ -5,7 +5,7 @@
 
 [Technologies](#Technologies-Movie-card-libray)  |  [How To Use](#how-to-use-Movie-card-libray)  |  [My Purpose](#my-purpose-Movie-card-libray) | [Challenge I Faced ](#challenge-i-faced-Movie-card-libray)
 </br></br>
-<img src='img/figma-land.gif' alt='figma-land'>
+<img src='img/movie-cards.png' alt='figma-land'>
 
 ========================= ## =========================
 <a id="Technologies-Movie-card-libray"></a>
