@@ -1,5 +1,6 @@
 import { FormPrize } from '../FormPrize';
 import { People } from '../People';
+import { Winner } from '../Winner';
 import * as C from './styles';
 
 export function Prize() {
@@ -10,6 +11,7 @@ export function Prize() {
         <FormPrize />
         <People />
       </C.Content>
+      <Winner />
     </C.Container>
   );
 }

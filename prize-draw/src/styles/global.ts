@@ -33,7 +33,6 @@ body {
     background-image: url(${bgpng});
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 h1, h2, h3, h4, h5, h6, strong{
     font-weight: 600;

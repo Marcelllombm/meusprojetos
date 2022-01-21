@@ -15,17 +15,25 @@ span{
         color:white;
         padding: 15px;
         width: 75%;
+        height: 3rem;
     }
 
     button{
         background: var(--red);
-        margin-left: 10px;
-        width: 60px;
-        color:white;
-        font-weight: 700;
-        font-size: 2rem;
         border: 0;
         border-radius: 10px;
+        color:white;
+        font-size: 2rem;
+        font-weight: 700;
+        height: 3rem;
+        margin-left: 10px;
+        width: 3rem;
+
+        transition: filter 0.2s;
+
+        &:hover{
+            filter: brightness(0.7);
+        }
     }
 }
 `;
