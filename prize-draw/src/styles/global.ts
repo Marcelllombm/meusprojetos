@@ -4,7 +4,7 @@ import bgpng from '../assets/bg-fundo.png';
 
 export const GlobalStyle = createGlobalStyle`
 :root{
-    --blue: #162646,
+    --blue: #162646;
     --yellow: #ECBD00;
     --red: #BF0000;
     --background:#ADBEA7;
