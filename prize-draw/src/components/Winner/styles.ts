@@ -11,4 +11,9 @@ export const Content = styled.div`
     justify-content: center;
     align-items : center;
     flex: 0.5;
+
+    h1 {
+        color: var(--blue);
+        font-size: 2.5rem;
+    }
 `;
