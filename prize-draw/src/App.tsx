@@ -1,4 +1,11 @@
+import { GlobalStyle } from "./styles/global";
+
 export  function App() {
-  return <div>Prize Draw</div>;
+  return( 
+  <>
+  <GlobalStyle />
+   Prize Draw
+  </>
+  );
 }
 
