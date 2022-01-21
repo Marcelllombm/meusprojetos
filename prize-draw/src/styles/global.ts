@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import bgpng from '../assets/bg-fundo.png';
+
 
 export const GlobalStyle = createGlobalStyle`
 :root{
@@ -27,6 +29,12 @@ body, input, textarea, button{
     font-weight: 400;
     }
 
+body {
+    background-image: url(${bgpng});
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
 h1, h2, h3, h4, h5, h6, strong{
     font-weight: 600;
     }
@@ -40,3 +48,4 @@ button {
     }
 }
 `;
+
