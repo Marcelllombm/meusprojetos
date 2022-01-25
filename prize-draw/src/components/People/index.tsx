@@ -6,13 +6,14 @@ interface propsObj {
 
 type Props = {
   item: propsObj,
+  handleRemove:(id: number) => (event: any ) => void;
 }
-export  function People({item}: Props) {
+export  function People({item, handleRemove}: Props) {
   
   return (
       <C.Content>
           <span>
-          <h3>{item.valueInput}</h3>  <button>-</button>
+          <h3>{item.valueInput}</h3>  <button onClick={handleRemove(item.id)}>-</button>
         </span>
        
 

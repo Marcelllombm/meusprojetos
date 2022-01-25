@@ -34,6 +34,11 @@ export function Prize() {
     setValueInput(target.value);
   }
 
+  const handleRemove =(id: number) => (event: any) => {
+    const removeArr = [...nameList].filter(todo => todo.id !== id);
+    setNameLista(removeArr);
+  }
+
     return (
     <C.Container>
       <C.Content>
@@ -43,6 +48,7 @@ export function Prize() {
             <People
               key={index}
               item={item}
+              handleRemove={handleRemove}
             />
           ))}
         
