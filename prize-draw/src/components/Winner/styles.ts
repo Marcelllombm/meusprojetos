@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 export const Content = styled.div`
+    width: 65%;
+
+    h1 {
+    color: var(--blue);
+    font-size: 2.5rem;
     width: 400px;
     background-color: var(--yellow);
     max-height: 100px;
@@ -11,9 +16,10 @@ export const Content = styled.div`
     justify-content: center;
     align-items : center;
     flex: 0.5;
+    padding: 20px;
+    }
 
-    h1 {
-        color: var(--blue);
-        font-size: 2.5rem;
+    div{
+        
     }
 `;

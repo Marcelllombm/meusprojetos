@@ -1,30 +1,21 @@
 import * as C from './styles';
+interface propsObj {
+  id: number;
+  valueInput: string;
+}
 
-export  function People() {
+type Props = {
+  item: propsObj,
+}
+export  function People({item}: Props) {
+  
   return (
       <C.Content>
-        <span>
-          <h3>Marcelo Borges</h3>  <button>-</button>
+          <span>
+          <h3>{item.valueInput}</h3>  <button>-</button>
         </span>
-        <span>
-          <h3>Marcelo Borges</h3>  <button>-</button>
-        </span>
-        <span>
-          <h3>Marcelo Borges</h3>  <button>-</button>
-        </span>
-        <span>
-          <h3>Marcelo Borges</h3>  <button>-</button>
-        </span>
-        <span>
-          <h3>Marcelo Borges</h3>  <button>-</button>
-        </span>
-        <span>
-          <h3>Marcelo Borges</h3>  <button>-</button>
-        </span>
-        <span>
-          <h3>Marcelo Borges</h3>  <button>-</button>
-        </span>
-        
+       
+
       </C.Content>
   );
 }
