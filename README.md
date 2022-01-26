@@ -1,11 +1,69 @@
 # meusProjetos
 :mortar_board: Meus Projetos..
 
+# Prize-Draw
+
+[Technologies](#Technologies-prize-draw)  |  [How To Use](#how-to-use-prize-draw)  |  [My Purpose](#my-purpose-prize-draw) | [Challenge I Faced ](#challenge-i-faced-prize-draw)
+</br></br>
+<img src='img/prize-draw.gif' alt='prize-draw'>
+
+========================= ## =========================
+<a id="Technologies-prize-draw"></a>
+
+### < Technologies />
+
+:arrow_right:  This project was developed with the following technologies:
+
+- [Reactjs](https://reactjs.org/)
+- [React-toastify](https://npm.io/package/react-toastify)
+- [Styled-Components](https://styled-components.com/)
+- [Typescript](https://www.typescriptlang.org/)
+
+
+========================= ## =========================
+<a id="how-to-use-prize-draw"></a>
+
+### < How To Use />
+:hash: To clone and run this application, you will need Git, Node.js v14.15 or higher installed on your computer. From your command line:
+
+```
+# Clone this repository
+$ git clone git@github.com:Marcelllombm/meusprojetos.git
+
+# Go into the repository
+$ cd meusprojetos
+
+# Enter the branch prize-draw
+$ git checkout prize-draw
+
+# enter the folder
+$ cd prize-draw
+
+# Install dependencies
+$ npm install or yarn
+
+# Run the app
+$ npm start or yarn start
+```
+========================= ## =========================
+<a id="my-purpose-prize-draw"></a>
+
+### < My Purpose />
+
+:dart: The objectives of this project are: to do with typescript
+
+========================= ## =========================
+<a id="challenge-i-faced-prize-draw"></a>
+
+### < Challenge I Faced />
+:cyclone: uses typescript
+<hr>
+
 # Movie-card-libray
 
 [Technologies](#Technologies-Movie-card-libray)  |  [How To Use](#how-to-use-Movie-card-libray)  |  [My Purpose](#my-purpose-Movie-card-libray) | [Challenge I Faced ](#challenge-i-faced-Movie-card-libray)
 </br></br>
-<img src='img/movie-cards.png' alt='figma-land'>
+<img src='img/movie-cards.png' alt='movie-cards'>
 
 ========================= ## =========================
 <a id="Technologies-Movie-card-libray"></a>
@@ -29,7 +87,7 @@ $ git clone git@github.com:Marcelllombm/meusprojetos.git
 # Go into the repository
 $ cd meusprojetos
 
-# Enter the branch app-produtos
+# Enter the branch Movie-card-libray
 $ git checkout Movie-card-libray
 
 # enter the folder
@@ -87,7 +145,7 @@ $ git clone git@github.com:Marcelllombm/meusprojetos.git
 # Go into the repository
 $ cd meusprojetos
 
-# Enter the branch app-produtos
+# Enter the branch figma-land
 $ git checkout figma-land
 
 # enter the folder
