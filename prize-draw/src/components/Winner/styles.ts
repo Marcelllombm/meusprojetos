@@ -20,6 +20,28 @@ export const Content = styled.div`
     }
 
     div{
-        
+        background: rgba(255,255,255,0.8);
+        color: var(--blue);
+        font-weight: bold;
+        font-size:6rem;
+        text-transform:uppercase;
+        text-align: center;
+        margin-top: 30%;
+        padding:20px 0;
     }
+`;
+
+interface propsDivActive {
+    active: boolean;
+}
+export const ContentDiv = styled.div<propsDivActive>`
+        background: rgba(255,255,255,0.8);
+        color: var(--blue);
+        font-weight: bold;
+        font-size:6rem;
+        text-transform:uppercase;
+        text-align: center;
+        margin-top: 30%;
+        padding:20px 0;
+        display: ${(props) => props.active ? 'block' : ' none'};
 `;

@@ -4,9 +4,10 @@ interface propsForm {
   handleClick: (e: any) => void;
   handleChange:(e: any) => void;
   valueInput: string;
+  handlePrizeDraw:() => void;
 }
 
-export function FormPrize({handleClick, handleChange, valueInput}: propsForm) {
+export function FormPrize({handleClick, handleChange, valueInput, handlePrizeDraw}: propsForm) {
 
 
   
@@ -18,11 +19,11 @@ export function FormPrize({handleClick, handleChange, valueInput}: propsForm) {
         value={valueInput}
         onChange={handleChange}
         autoComplete='off'  
-        placeholder='Escrever nome'
+        placeholder='Nome'
         />
         <button type="submit" >+</button>
     </form>
-        <button className='bt-sortear'>SORTEAR AGORA</button>
+        <button className='bt-sortear' onClick={handlePrizeDraw} >SORTEAR AGORA</button>
   </C.Content>
   
   );
